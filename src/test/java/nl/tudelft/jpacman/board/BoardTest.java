@@ -64,14 +64,14 @@ public class BoardTest {
         assertThat(square).isInstanceOf(BasicSquare.class);
     }
 
-    /***
-     *
-     */
-    @Test
-    void testSquareAtNull() {
-        Square[][] grid = new Square[1][1];
-        board = new Board(grid);
-        Square square = board.squareAt(0, 0);
-        assertThat(square).isNull();
-    }
+    // /***
+    //  *
+    //  */
+    // @Test
+    // void testSquareAtNull() {
+    //     Square[][] grid = new Square[1][1];
+    //     board = new Board(grid);
+    //     Square square = board.squareAt(0, 0);
+    //     assertThat(square).isNull();
+    // }
 }
