@@ -3,7 +3,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+    /***
+     *
+     */
 public class BoardTest {
+    
     /***
      *
      */
@@ -13,7 +17,7 @@ public class BoardTest {
      *
      */
     @BeforeEach
-    void setUp(){
+    void setUp() {
         Square[][] grid = new Square[1][1];
         grid[0][0] = new BasicSquare();
         board = new Board(grid);
@@ -67,7 +71,7 @@ public class BoardTest {
     void testSquareAtNull() {
         Square[][] grid = new Square[1][1];
         board = new Board(grid);
-        Square square = board.squareAt(0,0 );
+        Square square = board.squareAt(0, 0 );
         assertThat(square).isNull();
     }
 }
