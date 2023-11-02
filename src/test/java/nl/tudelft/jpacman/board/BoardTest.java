@@ -71,7 +71,7 @@ public class BoardTest {
     void testSquareAtNull() {
         Square[][] grid = new Square[1][1];
         board = new Board(grid);
-        Square square = board.squareAt(0, 0 );
+        Square square = board.squareAt(0, 0);
         assertThat(square).isNull();
     }
 }
